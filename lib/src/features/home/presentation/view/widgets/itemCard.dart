@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:parfums_app/src/core/styles.dart';
+import 'package:parfums_app/src/features/home/presentation/view/widgets/productDetails.dart';
 
 class ItemCard extends StatelessWidget {
   const ItemCard({
@@ -14,7 +15,13 @@ class ItemCard extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 12.0),
       child: GestureDetector(
-        onTap: () {},
+        onTap: () {
+          Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const ProductDetails(),
+              ));
+        },
         child: Container(
           decoration: const BoxDecoration(boxShadow: [
             BoxShadow(
@@ -55,7 +62,11 @@ class ItemCard extends StatelessWidget {
                   alignment: Alignment.centerLeft,
                   child: Text('50 ml', style: kTextStyle14),
                 ),
-                Image.asset(image),
+                Image.asset(
+                  image,
+                  height: 120,
+                  width: 120,
+                ),
               ],
             ),
           ),

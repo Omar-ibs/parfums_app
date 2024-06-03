@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:parfums_app/src/features/Cart/presentation/view/cart.dart';
 import 'package:parfums_app/src/features/Favorite/presentation/view/favoriteView.dart';
 import 'package:parfums_app/src/features/Profile/presentation/view/profile.dart';
@@ -33,50 +32,47 @@ class _NavigationBarRState extends State<NavigationBarR> {
       child: Scaffold(
         body: screens.elementAt(selectedIndex),
         bottomNavigationBar: BottomNavigationBar(
-          items: <BottomNavigationBarItem>[
+          type: BottomNavigationBarType.fixed,
+          landscapeLayout: BottomNavigationBarLandscapeLayout.spread,
+          items: const <BottomNavigationBarItem>[
             BottomNavigationBarItem(
-              label: '',
-              icon: selectedIndex == 0
-                  ? const Icon(
-                      FluentIcons.home_24_filled,
-                      size: 30.0,
-                    )
-                  : const Icon(
-                      FluentIcons.home_24_regular,
-                      size: 30.0,
-                    ),
-            ),
+                label: '',
+                icon: Icon(
+                  FluentIcons.home_24_regular,
+                ),
+                activeIcon: Icon(
+                  FluentIcons.home_24_filled,
+                )),
             BottomNavigationBarItem(
-              label: '',
-              icon: selectedIndex == 1
-                  ? const Icon(
-                      FontAwesomeIcons.solidHeart,
-                    )
-                  : const Icon(
-                      FontAwesomeIcons.heart,
-                    ),
-            ),
+                label: '',
+                icon: Icon(
+                  FluentIcons.heart_24_regular,
+                ),
+                activeIcon: Icon(FluentIcons.heart_24_filled, size: 30.0)),
             BottomNavigationBarItem(
-              label: '',
-              icon: selectedIndex == 2
-                  ? const Icon(Icons.shopping_cart)
-                  : const Icon(
-                      Icons.shopping_cart_outlined,
-                    ),
-            ),
+                label: '',
+                icon: Icon(
+                  FluentIcons.shopping_bag_24_regular,
+                ),
+                activeIcon: Icon(
+                  FluentIcons.shopping_bag_24_filled,
+                )),
             BottomNavigationBarItem(
-              label: '',
-              icon: selectedIndex == 3
-                  ? const Icon(FontAwesomeIcons.solidUser)
-                  : const Icon(FontAwesomeIcons.user),
-            ),
+                label: '',
+                icon: Icon(
+                  FluentIcons.person_24_regular,
+                ),
+                activeIcon: Icon(
+                  FluentIcons.person_24_filled,
+                )),
           ],
+          iconSize: 30.0,
           selectedItemColor: const Color(0xff262825),
           unselectedItemColor: const Color(0xff262825),
           currentIndex: selectedIndex,
           backgroundColor: const Color(0xffffffff),
           enableFeedback: false,
-          elevation: 20.0,
+          elevation: 0.0,
           onTap: onPress,
         ),
       ),

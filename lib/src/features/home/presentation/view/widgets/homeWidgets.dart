@@ -18,7 +18,7 @@ class HomeWidgets extends StatelessWidget {
         children: [
           const AppBarR(),
           SizedBox(
-            height: MediaQuery.of(context).size.height - 152,
+            height: MediaQuery.of(context).size.height * 0.777,
             child: ListView(
               physics: const BouncingScrollPhysics(),
               scrollDirection: Axis.vertical,
