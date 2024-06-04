@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
+import 'package:parfums_app/src/core/constants.dart';
 
 class DetailsAppBar extends StatelessWidget {
   const DetailsAppBar({
@@ -20,6 +22,7 @@ class DetailsAppBar extends StatelessWidget {
             color: Color(0xff262825),
           ),
         ),
+        SvgPicture.asset(logo),
         IconButton(
           onPressed: () {},
           icon: const Icon(

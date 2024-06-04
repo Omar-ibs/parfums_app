@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:parfums_app/src/features/home/presentation/view/homeview.dart';
+import 'package:parfums_app/src/core/approuter.dart';
 
 void main() {
-  runApp(const ParfumsApps());
+  runApp(const PerfumesApps());
 }
 
-class ParfumsApps extends StatelessWidget {
-  const ParfumsApps({super.key});
+class PerfumesApps extends StatelessWidget {
+  const PerfumesApps({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,8 @@ class ParfumsApps extends StatelessWidget {
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.white,
       ),
-      home: const HomeView(),
+      routes: AppRouter().routes,
+      initialRoute: AppRouter.home,
     );
   }
 }

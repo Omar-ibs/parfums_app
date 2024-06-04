@@ -23,28 +23,31 @@ class ItemCard extends StatelessWidget {
               ));
         },
         child: Container(
-          decoration: const BoxDecoration(boxShadow: [
-            BoxShadow(
-                color: Color(0x0077767B),
-                offset: Offset(0, 79),
-                blurRadius: 22.0),
-            BoxShadow(
-                color: Color(0x0877767B),
-                offset: Offset(0, 51),
-                blurRadius: 20.0),
-            BoxShadow(
-                color: Color(0x0a77767B),
-                offset: Offset(0, 29),
-                blurRadius: 17.0),
-            BoxShadow(
-                color: Color(0x0b77767B),
-                offset: Offset(0, 13),
-                blurRadius: 13.0),
-            BoxShadow(
-                color: Color(0x3f77767B),
-                offset: Offset(0, 3),
-                blurRadius: 7.0),
-          ], color: Color(0xffffffff)),
+          decoration: BoxDecoration(
+              boxShadow: const [
+                BoxShadow(
+                    color: Color(0x0077767B),
+                    offset: Offset(0, 79),
+                    blurRadius: 22.0),
+                BoxShadow(
+                    color: Color(0x0877767B),
+                    offset: Offset(0, 51),
+                    blurRadius: 20.0),
+                BoxShadow(
+                    color: Color(0x0a77767B),
+                    offset: Offset(0, 29),
+                    blurRadius: 17.0),
+                BoxShadow(
+                    color: Color(0x0b77767B),
+                    offset: Offset(0, 13),
+                    blurRadius: 13.0),
+                BoxShadow(
+                    color: Color(0x3f77767B),
+                    offset: Offset(0, 3),
+                    blurRadius: 7.0),
+              ],
+              color: const Color(0xffffffff),
+              borderRadius: BorderRadius.circular(16)),
           width: 177,
           height: 250.0,
           child: Padding(
