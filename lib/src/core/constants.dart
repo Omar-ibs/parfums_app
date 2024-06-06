@@ -1,8 +1,8 @@
-const logo = 'assets/Logo.svg';
-const perfume1 = 'assets/BVLGARI Rose Goldea.jpg';
-const perfume2 = 'assets/Chopard.jpg';
-const perfume3 = 'assets/Christian Dior Happy Hour.jpg';
-const perfume4 = 'assets/Lancome Idol Idole Nectar.jpg';
+const logo = 'assets/images/Logo.svg';
+const perfume1 = 'assets/images/BVLGARI Rose Goldea.jpg';
+const perfume2 = 'assets/images/Chopard.jpg';
+const perfume3 = 'assets/images/Christian Dior Happy Hour.jpg';
+const perfume4 = 'assets/images/Lancome Idol Idole Nectar.jpg';
 const tPerfume1 = 'BVLGARI Rose Goldea';
 const tPerfume2 = 'Chopard HappyBigaradia';
 const tPerfume3 = 'Lancome Idol Idole Nectar';

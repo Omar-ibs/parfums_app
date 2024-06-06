@@ -13,6 +13,7 @@ class PerfumesApps extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        fontFamily: 'Poppins',
         scaffoldBackgroundColor: Colors.white,
       ),
       routes: AppRouter().routes,

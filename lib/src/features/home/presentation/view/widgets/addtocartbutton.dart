@@ -13,7 +13,7 @@ class AddToCartButton extends StatelessWidget {
       child: GestureDetector(
         child: Container(
           height: 50.0,
-          width: MediaQuery.of(context).size.width * 0.8,
+          width: MediaQuery.of(context).size.width * 0.7,
           decoration: const BoxDecoration(
             boxShadow: [
               BoxShadow(
