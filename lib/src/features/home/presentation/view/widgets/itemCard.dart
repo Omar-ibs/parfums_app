@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:parfums_app/src/core/styles.dart';
+import 'package:parfums_app/src/features/home/presentation/view/widgets/likeButton.dart';
 import 'package:parfums_app/src/features/home/presentation/view/widgets/productDetails.dart';
 
 class ItemCard extends StatelessWidget {
@@ -55,10 +56,24 @@ class ItemCard extends StatelessWidget {
                 const EdgeInsets.symmetric(horizontal: 15.0, vertical: 15.0),
             child: Column(
               children: [
-                Text(
-                  title,
-                  style: kTextStyle16.copyWith(overflow: TextOverflow.ellipsis),
-                  maxLines: 2,
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    SizedBox(
+                      width: 115,
+                      height: 45.0,
+                      child: Text(
+                        title,
+                        style: kTextStyle16.copyWith(
+                            overflow: TextOverflow.ellipsis),
+                        maxLines: 2,
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 8.0),
+                      child: LikeButton(),
+                    )
+                  ],
                 ),
                 const Align(
                   heightFactor: 1.6,
@@ -67,9 +82,16 @@ class ItemCard extends StatelessWidget {
                 ),
                 Image.asset(
                   image,
-                  height: 120,
-                  width: 120,
+                  height: 110,
+                  width: 110,
                 ),
+                const SizedBox(
+                  height: 5.0,
+                ),
+                const Text(
+                  '€229.00',
+                  style: kTextStyle14,
+                )
               ],
             ),
           ),

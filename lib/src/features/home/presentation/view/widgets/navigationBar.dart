@@ -44,11 +44,12 @@ class _NavigationBarRState extends State<NavigationBarR> {
                   FluentIcons.home_24_filled,
                 )),
             BottomNavigationBarItem(
-                label: '',
-                icon: Icon(
-                  FluentIcons.heart_24_regular,
-                ),
-                activeIcon: Icon(FluentIcons.heart_24_filled, size: 30.0)),
+              label: '',
+              icon: Icon(
+                FluentIcons.heart_24_regular,
+              ),
+              activeIcon: Icon(FluentIcons.heart_24_filled, size: 30.0),
+            ),
             BottomNavigationBarItem(
                 label: '',
                 icon: Icon(

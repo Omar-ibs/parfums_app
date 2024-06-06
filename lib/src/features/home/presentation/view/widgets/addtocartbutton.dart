@@ -4,8 +4,9 @@ import 'package:parfums_app/src/core/styles.dart';
 class AddToCartButton extends StatelessWidget {
   const AddToCartButton({
     super.key,
+    required this.title,
   });
-
+  final String title;
   @override
   Widget build(BuildContext context) {
     return Align(
@@ -13,7 +14,7 @@ class AddToCartButton extends StatelessWidget {
       child: GestureDetector(
         child: Container(
           height: 50.0,
-          width: MediaQuery.of(context).size.width * 0.8,
+          width: MediaQuery.of(context).size.width * 0.7,
           decoration: const BoxDecoration(
             boxShadow: [
               BoxShadow(
@@ -57,7 +58,7 @@ class AddToCartButton extends StatelessWidget {
           ),
           child: Center(
               child: Text(
-            'Add to Cart',
+            title,
             style: kTextStyle18.copyWith(
                 color: const Color(0xffffffff), fontWeight: FontWeight.w500),
           )),

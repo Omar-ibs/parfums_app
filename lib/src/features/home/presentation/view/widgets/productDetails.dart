@@ -4,6 +4,7 @@ import 'package:parfums_app/src/core/styles.dart';
 import 'package:parfums_app/src/features/home/presentation/view/widgets/addtocartbutton.dart';
 import 'package:parfums_app/src/features/home/presentation/view/widgets/amountButtons.dart';
 import 'package:parfums_app/src/features/home/presentation/view/widgets/detailsAppBar.dart';
+import 'package:parfums_app/src/features/home/presentation/view/widgets/likeButton.dart';
 import 'package:parfums_app/src/features/home/presentation/view/widgets/rating.dart';
 
 class ProductDetails extends StatelessWidget {
@@ -21,6 +22,7 @@ class ProductDetails extends StatelessWidget {
               children: [
                 const DetailsAppBar(),
                 Align(
+                  heightFactor: 1.1,
                   alignment: Alignment.center,
                   child: Image.asset(
                     perfume1,
@@ -64,9 +66,17 @@ class ProductDetails extends StatelessWidget {
                   overflow: TextOverflow.ellipsis,
                 ),
                 SizedBox(
-                  height: MediaQuery.of(context).size.height * 0.15,
+                  height: MediaQuery.of(context).size.height * 0.12,
                 ),
-                const AddToCartButton(),
+                const Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    LikeButton(),
+                    AddToCartButton(
+                      title: 'Add to cart',
+                    ),
+                  ],
+                ),
               ],
             ),
           ),

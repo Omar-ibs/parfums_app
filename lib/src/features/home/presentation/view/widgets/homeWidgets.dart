@@ -3,7 +3,6 @@ import 'package:parfums_app/src/core/constants.dart';
 import 'package:parfums_app/src/features/home/presentation/view/widgets/appBar.dart';
 import 'package:parfums_app/src/features/home/presentation/view/widgets/customRow.dart';
 import 'package:parfums_app/src/features/home/presentation/view/widgets/itemCard.dart';
-import 'package:parfums_app/src/features/home/presentation/view/widgets/simpleDescription.dart';
 
 class HomeWidgets extends StatelessWidget {
   const HomeWidgets({
@@ -25,8 +24,8 @@ class HomeWidgets extends StatelessWidget {
               children: const [
                 CustomRow(
                   head: 'Best Sellers',
+                  description: 'The Best Perfume Ever',
                 ),
-                SimpleDescription(description: 'The Best Perfume Ever'),
                 Row(
                   children: [
                     ItemCard(
@@ -39,8 +38,10 @@ class HomeWidgets extends StatelessWidget {
                     ),
                   ],
                 ),
-                CustomRow(head: 'Just Arrived'),
-                SimpleDescription(description: 'Recently Arrived Perfumes'),
+                CustomRow(
+                  head: 'Just Arrived',
+                  description: 'Recently Arrived Perfumes',
+                ),
                 Row(
                   children: [
                     ItemCard(image: perfume3, title: tPerfume3),
