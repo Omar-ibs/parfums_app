@@ -1,4 +1,5 @@
 const logo = 'assets/images/Logo.svg';
+const kidu = 'assets/images/kidu.jpg';
 const perfume1 = 'assets/images/BVLGARI Rose Goldea.jpg';
 const perfume2 = 'assets/images/Chopard.jpg';
 const perfume3 = 'assets/images/Christian Dior Happy Hour.jpg';
